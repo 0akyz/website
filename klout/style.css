@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+ font-family: serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(the.gif);
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+		font-family: serif;
+}
+
+.navbar ul li{
+        list-style: none;
+	display: inline-block;
+	margin: 0 35px;
+	
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	text-align: top;
+	color: #aa8d8d;
+		font-family: serif;
+
+	
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+content: '';
+	height: 3px;
+	width: 0;
+	background: #f000ec;
+	position: absolute;
+	left: 0;
+	bottom: 1;
+	transition: 1s;
+	
+}
+.navbar ul li:hover::after{
+	width: 100%;
+
+	
+}
+.content{
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #aa8d8d;
+		font-family: serif;
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	padding: 15px;
+	text-align: center;
+	border-radius: 25px;
+	font-family: cursive;
+	font-weight: bold;
+	border: 2px solid #009688;
+	cursor: pointer;
+	color: #fff;
+	background: transparent;
+	
+}
